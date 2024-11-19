@@ -17,5 +17,16 @@ document.addEventListener('keypress', function (event) {
 // form events: displays a message when the form is submitted without refreshing the page
 document.getElementById('submitBtn').addEventListener('click', function (event) {
     event.preventDefault();
-    document.getElementById('submitMsg').innerHTML="Form is submitted";
+    document.getElementById('submitMsg').innerHTML = "Form is submitted";
+})
+
+// focus and blur events 
+document.getElementById('email').addEventListener('focus', function () {
+    this.value = "Please, enter your email";
+    this.style.background = "yellow";
+})
+
+document.getElementById('email').addEventListener('blur', function () {
+    this.value = "Your email";
+    this.style.background = "pink";
 })

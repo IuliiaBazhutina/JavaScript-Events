@@ -12,3 +12,7 @@ form {
     display: grid;
     width: 400px;
 }
+
+span {
+    color: red;
+}
