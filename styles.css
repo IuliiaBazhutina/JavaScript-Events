@@ -1,4 +1,14 @@
+body {
+    padding: 10px;
+}
+
 button {
     width: 150px;
     height: 40px;
+    margin-top: 10px;
+}
+
+form {
+    display: grid;
+    width: 400px;
 }

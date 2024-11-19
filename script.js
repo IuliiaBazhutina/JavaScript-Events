@@ -13,3 +13,9 @@ document.addEventListener('keypress', function (event) {
     const displayKeyPressed = document.getElementById('displayKeyPressed');
     displayKeyPressed.innerHTML = `Character: ${event.charCode}<br>Character pressed: ${String.fromCharCode(event.charCode)}`
 })
+
+// form events: displays a message when the form is submitted without refreshing the page
+document.getElementById('submitBtn').addEventListener('click', function (event) {
+    event.preventDefault();
+    document.getElementById('submitMsg').innerHTML="Form is submitted";
+})
